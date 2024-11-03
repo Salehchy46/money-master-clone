@@ -43,7 +43,7 @@ function floatingExtendedMoney(){
 }
 
 function monthlySavings (){
-  const saveMoney = 0.8 * floatingExtendedMoney();
+  const saveMoney = 0.2 * floatingExtendedMoney();
   return saveMoney;
 }
 
