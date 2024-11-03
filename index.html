@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Money Master</title>
+</head>
+<body class="m-10">
+  <header class="text-center text-5xl font-extrabold">
+    <h1>Money Master 💰</h1>
+  </header>
+  <main>
+    <div class="flex mt-10">
+      <div class="flex-1">
+        <img class="" src="money-master.png" alt="">
+      </div>
+      <div class="text-center mx-5 flex-1">
+        <h5 class="text-2xl font-bold">Income</h5>
+        <div class="flex my-5">
+          <label class="mr-5" for="">Income:</label>
+          <input placeholder="Salary" class="border border-black w-full" type="number" id="income-amount">
+        </div>
+        <h5 class="text-2xl font-bold">Expenses</h5>
+        <div class="my-5">
+          <label class="mr-5" for="">Food:</label>
+          <input placeholder="Amount" id="food-bill" class="border border-black w-full" type="number">
+          <label class="mr-5" for="">Rent:</label>
+          <input placeholder="Amount" id="house-bill" class="border border-black w-full" type="number">
+          <label class="mr-5" for="">Clothes:</label>
+          <input placeholder="Amount" id="cloth-bill" class="border border-black w-full" type="number">
+        </div>
+        <button class="btn btn-sm btn-success" id="calculate">Calculate</button>
+        <div class="flex mt-5">
+          <h5 class="mr-5">Total Expenses : </h5>
+        </div>
+        <div class="flex my-5">
+          <h5>Balance : </h5>
+        </div>
+        <div class="flex">
+          <h6 class="mx-10">Save</h6>
+          <h6 class="mx-10">20</h6>
+          <h6 class="mx-10">%</h6>
+          <button class="btn btn-sm btn-success">Save</button>
+        </div>
+        <div class="flex my-5">
+          <h5>Saving Amount : </h5>
+        </div>
+        <div class="flex my-5">
+          <h5>Remaining Balance : </h5>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="calculate.js"></script>
+</body>
+</html>
